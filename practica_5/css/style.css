@@ -1,0 +1,288 @@
+/*
+Primero eliminamos márgenes, rellenos y estilos de enlaces y listas para trabajar en un formato limpio
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*
+Ahora empezaremos a darle estilos a la cabecera, asignando así un position sticky y un top: 0,
+para fijarlo a la parte superior de la pantalla. Cambiaremos el color de letra y fondo, y añadiremos
+un relleno. Además, estilizaremos unos iconos que colocaremos a cada lado del título.
+*/
+.title {
+    position: sticky;
+    top: 0;
+    padding: 1%;
+    background: #E2D5CD;
+    text-align: center;
+    color: #025D55;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tomato_icon {
+    height: 50px;
+    width: 50px;
+}
+
+/*
+Continuamos con el contenido principal de nuestra web, el contenedor. En este caso,
+comenzaremos estableciendo un margen superior para separarlo de la cabecera; seguido de display
+flex y justify content: space between para distribuir el espacio adecuadamente entre los elementos
+*/
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.75%;
+}
+
+/*
+Lo siguiente que trataremos será la barra de navegación, que en este caso será lateral.
+*/
+.navbar {
+    display: flex;
+    width: 10%;
+    background: #E2D5CD;
+    align-items: center;
+    line-height: 500%;
+}
+
+
+/*
+Estas reglas estilizará nuestros "botones" (que no serán realmente botones, sino elementos
+de lista que haremos ver como botones)
+*/
+.button {
+    width: 185%;
+    text-align: center;
+    background: #025D55;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+#button_home {
+    background: #025D55e1;
+}
+
+.button:hover {
+    background: #025d55e1;
+    cursor: pointer;
+}
+
+/*
+Esto estilizará las secciones entre las que podremos navegar, así como los elementos 
+contenidos en ellas: tamaño y disposición de las imágenes, títulos y pies de fotos.
+Todas las secciones tienen prácticamente las mismas reglas de CSS.
+*/
+
+/*
+Primera sección
+*/
+.home {
+    width: 85%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .image {
+    width: 50%;
+}
+
+.home img {
+    width: 99%;
+    height: 100%;
+}
+
+/*
+Segunda sección
+*/
+.types {
+    width: 85%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.types h2 {
+    margin-bottom: 0.5%;
+    color: #025D55;
+}
+
+.types .image {
+    width: 50%;
+}
+
+.types img {
+    width: 99%;
+    height: 100%;
+}
+
+.types .text {
+    width: 50%;
+    text-align: justify;
+    margin-left: 0.5%;
+}
+
+/*
+Tercera sección
+*/
+.location {
+    width: 85%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.location h2 {
+    margin-bottom: 0.5%;
+    color: #025D55;
+}
+
+.location .image {
+    width: 50%;
+}
+
+.location img {
+    width: 99%;
+    height: 100%;
+    margin-left: 0.9%;
+}
+
+.location .text {
+    width: 50%;
+    text-align: justify;
+    margin-left: 0.5%;
+}
+
+/*
+Cuarta sección
+*/
+.facts {
+    width: 85%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.facts h2 {
+    margin-bottom: 0.5%;
+    color: #025D55;
+}
+
+.facts .image {
+    width: 50%;
+}
+
+.facts img {
+    width: 99%;
+    height: 100%;
+}
+
+.facts .text {
+    width: 50%;
+    text-align: justify;
+    margin-left: 0.5%;
+}
+
+/*
+Un segundo apartado de nuestra página. Con un estilizado muy similar al del apartado anterior.
+*/
+.top {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #F0F0F0;
+}
+
+.tomatoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top h2 {
+    text-align: center;
+    color: #025D55;
+    margin-bottom: 50px;
+}
+
+.tomatoes h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #025D55;
+}
+
+.tomatoes p {
+    text-align: justify;
+}
+
+.tomato {
+    width: 25%;
+}
+
+.tomato img {
+    width: 100%;
+    height: 50%;
+}
+
+/*
+Estilizado del footer para añadirle color de fondo, de texto, establecer la disposición de los elementos
+y un relleno.
+*/
+.footer {
+    background: #e2d5cd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    color: darkslategray;
+    text-shadow: 2px 2px black 2px 2px white;
+    text-align: center;
+}
+
+.enterprise {
+    margin-left: 15px;
+    color: #025D55;
+}
+
+.developer {
+    color: #025D55;
+}
+
+.social {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.social i {
+    padding: 5px;
+    border: 1px solid darkslategray;
+    border-radius: 100%;
+    color: #025D55;
+}

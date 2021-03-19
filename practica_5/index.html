@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMATES CARRILLO</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/tomato_icon.webp" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="title">
+        <img src="img/tomato_icon.webp" class="tomato_icon" alt="tomato">
+        <h1>TOMATES ALBERTO CARRILLO</h1>
+        <img src="img/tomato_icon.webp" class="tomato_icon" alt="tomato">
+    </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+        <!-- MAIN-HOME -->
+        <section id="home" class="home">
+            <div class="image">
+                <img src="img/home.jpg" alt="home"><br>
+                <caption>Tu amigable foro de tomates!</caption>
+            </div> 
+            <div class="image">
+                <img src="img/contest.jpg" alt="contest"><br>
+                <caption>Gana un sustento de tomates vitalicio!</caption>
+            </div>        
+        </section>
+
+        <!-- MAIN-TYPES -->
+        <section id="types" class="types">
+            <div class="image">
+                <img src="img/types.jpg" alt="types">
+            </div>
+            <div class="text">
+                <h2>Tipos de tomates</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga omnis necessitatibus explicabo cumque nemo laudantium quisquam fugit dolore repellendus quas. Illum impedit, quod ipsa perferendis eaque voluptatum tenetur blanditiis minus alias, consequatur et optio assumenda numquam. Voluptatum amet, dolores mollitia officiis ducimus nulla optio consequatur iusto ad nostrum debitis doloribus! Aperiam reprehenderit eaque libero quibusdam reiciendis. Nihil, magni mollitia officiis debitis et vel quam cupiditate explicabo, nesciunt consequuntur excepturi nisi quos magnam rem odit recusandae! Temporibus earum, voluptas ad aspernatur rem maiores reiciendis officiis porro consectetur eligendi similique voluptatibus culpa.</p>
+            </div>
+        </section>
+
+        <!-- MAIN-LOCATION -->
+        <section id="places" class="location">
+            <div class="text">
+                <h2>Dónde comprar tomates</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci commodi sed modi atque aperiam officia, non sequi ipsum eligendi tempore culpa delectus quisquam aliquid nemo omnis explicabo, dolores esse! Vero, optio ipsum debitis doloribus porro eveniet tenetur, animi neque quaerat obcaecati reiciendis dolor tempore sint. Esse, quo. Perferendis libero culpa pariatur cupiditate fugiat temporibus consectetur debitis aperiam adipisci dolorem dignissimos modi, dicta corrupti officiis omnis accusantium quas similique fuga. Dignissimos maxime corrupti molestiae adipisci perspiciatis, vitae impedit eligendi cum ducimus vero. Aut, nam. Excepturi impedit quia culpa inventore expedita.</p>
+            </div>
+            <div class="image">
+                <img src="img/places.jpg" alt="places">
+            </div>
+        </section>
+
+        <!-- MAIN-FACTS -->
+        <section id="facts" class="facts">
+            <div class="image">
+                <img src="img/facts.jpg" alt="facts">
+            </div>
+            <div class="text">
+                <h2>Curiosidades de los tomates</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis optio magnam exercitationem cupiditate sequi dolorum necessitatibus obcaecati corrupti suscipit provident, aliquam quibusdam animi non sapiente veritatis nulla magni velit. Optio corrupti recusandae suscipit fugit inventore dolores distinctio, a reprehenderit commodi, hic temporibus quidem omnis tempora nesciunt aperiam et! Quaerat facere asperiores id repellat sed eligendi, beatae sunt laboriosam culpa similique nemo maxime magni repudiandae veniam maiores tempore rerum unde debitis temporibus. Nobis, vero temporibus ducimus ad magni ex et porro laudantium, aut, dicta iure. Labore nobis laboriosam ab! Aut!</p>
+            </div>
+        </section>
+        
+        <!-- NAVBAR -->
+        <nav class="navbar">
+
+            <ul>
+                <li class="button button_top" id="button_home" onclick="go_home()">INICIO</li>
+                <li class="button button_middle" id="button_types" onclick="go_types()">TIPOS</li>
+                <li class="button button_middle" id="button_places" onclick="go_places()">LUGARES</li>
+                <li class="button button_bottom" id="button_facts" onclick="go_facts()">INTERÉS</li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <hr>
+
+    <!-- TOP TOMATOS -->
+    <div class="top">
+        <h2>LOS MEJORES TOMATES</h2>
+        <div class="tomatoes">
+            <div class="tomato">
+                <img src="img/tomato1.jpg" alt="tomato1"><br>
+                <h3>Tomate cherry</h3>
+                <p>El tomate aperitivo por excelencia. Perfecto para ensaladas y tentempiés por su tamaño, manteniendo un sabor sobresaliente</p>
+            </div>
+            <div class="tomato">
+                <img src="img/tomato2.jpg" alt="tomato2"><br>
+                <h3>Kumato</h3>
+                <p>El kumato, una de las mejores elecciones a la hora de hablar de tomates sabrosos.</p>
+            </div>
+            <div class="tomato">
+                <img src="img/tomato3.jpg" alt="tomato3"><br>
+                <h3>Tomate de pradera andaluz</h3>
+                <p>Este tomate brilla por su excelente equilibrio. Perfecto para un día en la playa</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="enterprise">
+            <span>TOMATES <br> ALBERTO CARRILLO</span>
+        </div>
+        <div class="developer">
+            <span>ALBERTO CARRILLO</span>
+        </div>
+        <div class="social">
+            <a href=""><i class="fa fa-facebook-square"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- CUSTOM JS -->
+    <script src="./js/main.js"></script>
+    <!-- FONT AWESOME -->
+    <script src="https://use.fontawesome.com/06cf15a60b.js"></script>
+
+</body>
+</html>
